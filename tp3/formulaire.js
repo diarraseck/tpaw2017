@@ -1,5 +1,5 @@
 
-$(function()
+$(function validation()
 {
 
 	if ( (document.formulaire.nom.value =="") || (document.formulaire.nom.value.length < 5 ))
@@ -54,3 +54,8 @@ $(function()
 	}
 	
 }
+  
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+  
