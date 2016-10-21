@@ -55,7 +55,5 @@ $(function validation()
 	
 }
   
-  $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
+ 
   
