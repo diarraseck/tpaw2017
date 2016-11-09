@@ -1,0 +1,55 @@
+<head>
+<meta charset="utf-8"/>
+<linkhref="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript"   src="​meteo​.js"></script>
+
+
+</head>
+
+<body>
+
+<form id="searchCity" class="form-inline" role="form">
+
+
+ <div class="form-group">
+   		<div class="input-group">
+   		<div class="input-group-addon"  id="gps">
+  		<button onclick="getLocation()" type="submit" class="btn btn-warning"> 
+                  GPS
+		</button>
+		</div>
+
+    	<div class="input-group-addon" >
+
+    		<input type="search" id="city"  class="form-control" aria-label="..." required placeholder="Votre ville, Paris, NY..."/>
+     <input type="submit" class="btn btn-primary" value="Rechercher">
+   		</div>
+   	
+    </div>
+  </div>
+
+
+</form>
+	<div id="result" align="center">
+
+<table class="table table-condensed">
+
+  <tr id="ville"> </tr>
+    
+
+    <tr id="meteo">
+      <img src="http://openweathermap.org/img/w/02d.png"> </img> <br/>
+    </tr>
+    
+  <tr ><td> <p>Humidity</p> </td> <td id="humidity"> </td></tr>
+  <tr ><td> <p>Nuage</p> </td> <td id="nuage"> </td></tr>
+  <tr ><td> <p>Vent</p> </td> <td id="vent"> </td></tr>
+  </table>
+    
+	</div>
+
+
+</body>
