@@ -1,0 +1,46 @@
+<head>
+<link rel="stylesheet" href="formulaire.css"/>
+<script type="text/javascript" src="formulaire.js" charset="utf-8"></script>
+</head>
+<body>
+<form name="formulaire" onsubmit="return validation();">
+ <p> 
+ <h1 size="100">
+Saisie d'une fiche"Personne"
+</h1>
+  </p>
+
+
+ <table border="0" width="100%">
+ <tr>
+
+ <td width="10%"> Nom </td> <td> <input type="text" name="nom" id="nom" /> </td> <br>
+ </tr>
+ <tr>
+ <td> Prenom  </td>  <td> <input type="text" name="prenom"id="prenom" /> </td> 
+ </tr>
+ <tr>
+ <td> Date de naissance </td> <td> <input placeholder="JJ/MM/AAAA" type="text" name="naissance" id="naissance"/> </td> 
+ </tr>
+ <tr>
+ <td>Adresse </td> <td> <input type="text" name="adresse" id="adresse"/> </td>
+ </tr>
+ <tr>
+ <td>Mail </td> <td><input type="text" name="mail" id="mail"/> </td>
+ 
+
+
+
+</tr>
+<tr>
+<td></td>
+<td> <input type="button" value="Valider" onclick="validation();" /> </td>
+
+</table>
+
+</form>
+
+
+<div id="error"> </div>
+<div id="resultat"> </div>
+</body>
